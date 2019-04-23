@@ -5,6 +5,7 @@ Author URI: https://themeforest.net/user/aseven
 Version: 1.0
 */
 
+
 /*
 [Table of contents]
 
@@ -32,7 +33,9 @@ Version: 1.0
 * Footer Area
 */
 
+
 /*============Glogbal Style================ */
+
 html,
 body {
     height: 100%;
@@ -162,7 +165,6 @@ button:focus {
     position: absolute;
     top: 0;
     left: 0;
-
     -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
     animation: sk-cubemove 1.8s infinite ease-in-out;
 }
@@ -211,7 +213,6 @@ button:focus {
 }
 
 
-
 /*::::::::::::::::::::::::::::::::::::
    Section Title
 ::::::::::::::::::::::::::::::::::::*/
@@ -246,13 +247,16 @@ button:focus {
     background-color: #ffc900
 }
 
+
 /*::::::::::::::::::::::::::::::::::::
    Main Menu
 ::::::::::::::::::::::::::::::::::::*/
-.navbar{
+
+.navbar {
     -webkit-transition: .3s;
     transition: .3s;
 }
+
 .navbar-brand.logo img {
     max-height: 40px;
 }
@@ -267,6 +271,7 @@ button:focus {
     color: #ffc900;
 }
 
+
 /*::::::::::::::::::::::::::::::::::::
    Hero Area 
 ::::::::::::::::::::::::::::::::::::*/
@@ -280,7 +285,6 @@ button:focus {
     background-position: center;
     background-size: cover;
 }
-
 
 .hero-aria:after {
     position: absolute;
@@ -310,7 +314,6 @@ button:focus {
     z-index: 1;
 }
 
-
 .slider-bg:after {
     content: '';
     position: absolute;
@@ -330,7 +333,6 @@ button:focus {
     max-width: 40%;
 }
 
-
 .hero-content h2 {
     color: #fff;
     font-size: 90px;
@@ -341,6 +343,7 @@ button:focus {
 .hero-content .button {
     margin-top: 30px;
 }
+
 
 /*::::::::::::::::::::::::::::::::::::
    Featured Area
@@ -530,7 +533,6 @@ button:focus {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 
-
 .single-fun-fact {
     border: 1px solid #fff;
     padding: 15px;
@@ -636,7 +638,6 @@ button:focus {
 }
 
 
-
 /*::::::::::::::::::::::::::::::::::::
    Why choose Me Section
 ::::::::::::::::::::::::::::::::::::*/
@@ -675,15 +676,12 @@ button:focus {
     text-align: left;
     padding-right: 0;
     padding-left: 115px;
-
 }
 
 .why-me-right .why-me-icon {
     right: auto;
     left: 0;
-
 }
-
 
 
 /*::::::::::::::::::::::::::::::::::::
@@ -750,7 +748,6 @@ button:focus {
     -webkit-transition: .3s;
     transition: .3s;
     z-index: -1;
-
 }
 
 .single-portfolio:hover:after {
@@ -866,7 +863,7 @@ button:focus {
 
 .single-faq h4[aria-expanded="true"]:after {
     -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg);
+    transform: rotate(-180deg);
 }
 
 .single-faq h4:after {
@@ -940,6 +937,7 @@ h4.blog-title a {
     border-color: #ffc900;
 }
 
+
 /*::::::::::::::::::::::::::::::::::::
    Blog Main Page
 ::::::::::::::::::::::::::::::::::::*/
@@ -966,7 +964,6 @@ h4.blog-title a {
     padding: 100px 0 70px 0;
 }
 
-
 .page-title h2 {
     font-size: 50px;
     color: #fff;
@@ -985,6 +982,7 @@ h4.blog-title a {
     background-color: #ffc900;
     border-color: #ffc900;
 }
+
 
 /*::::::::::::::::::::::::::::::::::::
    Sidebar
@@ -1035,7 +1033,6 @@ input:focus {
     list-style: none;
 }
 
-
 .sidebar-widget ol li {
     position: relative;
 }
@@ -1081,7 +1078,6 @@ input:focus {
     padding-left: 115px;
     width: 100%;
     height: 100%;
-
 }
 
 .blog-date {
@@ -1158,7 +1154,6 @@ ul.share li a {
     padding: 0 5px;
     font-size: 13px;
 }
-
 
 .blog-author {
     position: relative;
@@ -1257,7 +1252,6 @@ ul.share li a {
     padding-left: 95px;
 }
 
-
 .comment-content h4 {
     font-weight: 400;
     line-height: 1;
@@ -1268,7 +1262,6 @@ p.comment-date {
     color: #aaa;
     font-size: 15px;
 }
-
 
 .comment-content a {
     padding: 5px 15px;
@@ -1317,9 +1310,6 @@ p.comment-date {
     background-color: #000;
     border-color: #000;
 }
-
-
-
 
 
 /*::::::::::::::::::::::::::::::::::::
@@ -1497,7 +1487,6 @@ p.comment-date {
 
 .team-social a:hover {
     color: #000;
-
 }
 
 .single-team:hover .team-social {
@@ -1602,7 +1591,6 @@ p.comment-date {
     box-shadow: 0 0 0;
     background-color: #f8f9fa;
 }
-
 
 .contact-form textarea.form-control {
     height: 140px;

@@ -2,41 +2,556 @@
 <html lang="zh-TW">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>前端程式設計</title>
-    <!-- 引入自己定義的css -->
-    <link rel="stylesheet" href="./CSS/index.css">
+    <title>個人履歷</title>
+
+    <!-- ====== Google Fonts ====== -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+
+    <!-- ====== ALL CSS ====== -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
 
-<body>
-    <h1>前端程式設計</h1>
-    <p>課堂練習
-        <ul>
-            <li>課堂練習1: <a href="./link.html" target="_blank">連結練習</a></li>
-            <li>課堂練習2: <a href="./table.html" target="_blank">表格練習</a></li>
-            <li>課堂練習3: <a href="./span.html" target="_blank">span練習</a></li>
+<body data-spy="scroll" data-target=".navbar-nav">
 
-        </ul>
-    </p>
-    <p>課後練習
-        <ul>
-            <li>p1: <a href="./p1課表/classtable.html" target="_blank">課表練習</a> </li>
-            <li>p2:
-                <a href="./p2自我介紹/selfintro.html" target="_blank">自我介紹練習</a></li>
-        </ul>
-    </p>
-    <p>作業
-        <ul>
-            <li>作業1: <a href="/hw1/index.html" target="_blank">個人履歷</a></li>
-            <li>作業2: <a href="./p3購物網站前置/p3.html" target="_blank">購物網站</a></li>
-        </ul>
-    </p>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner">
+            <div class="cube1"></div>
+            <div class="cube2"></div>
+        </div>
+    </div>
+    <!-- // Preloader -->
 
 
+    <!-- ====== Header ====== -->
+    <header id="header" class="header">
+        <!-- ====== Navbar ====== -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
 
+
+                <!-- Mobile Menu -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false"><span><i class="fa fa-bars"></i></span></button>
+                <!-- Mobile Menu -->
+
+                <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#home">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link pr0" href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ====== // Navbar ====== -->
+    </header>
+    <!-- ====== // Header ====== -->
+
+    <!-- ====== Hero Area ====== -->
+    <div class="hero-aria" id="home" style="font-family:Microsoft YaHei">
+        <!-- Hero Area Content -->
+        <div class="container">
+            <div class="hero-content h-100">
+                <div class="d-table">
+                    <div class="d-table-cell">
+                        <h2 class="text-uppercase">HELLO</h2>
+                        <p>我是沈沛育</p>
+                        <a href="#about" class="button smooth-scroll">認識我</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Hero Area Content -->
+        <!-- Hero Area Slider -->
+        <div class="hero-area-slids owl-carousel">
+            <div class="single-slider">
+                <!-- Single Background -->
+                <div class="slider-bg" style="background-image: url(assets/images/01.jpg)"></div>
+                <!-- // Single Background -->
+            </div>
+            <div class="single-slider">
+                <!-- Single Background -->
+                <div class="slider-bg" style="background-image: url(assets/images/02.jpg)"></div>
+                <!-- // Single Background -->
+            </div>
+        </div>
+        <!-- // Hero Area Slider -->
+    </div>
+    <!-- ====== //Hero Area ====== -->
+
+
+    <!-- ====== About Area ====== -->
+    <section id="about" class="section-padding about-area bg-light" style="font-family:Microsoft YaHei">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title">
+                        <h2>About Me</h2>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-bg" style="background-image:url(assets/images/03.jpg)">
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2>Hello, 我是<span>沈沛育</span></h2>
+                        <p> 我的個性沉穩、內斂，雖然有點內向，但是是個隨和的人，也喜歡認識不同個性的人， 讓自己拓展視野及建立人脈。
+                            <br>喜歡打排球、慢跑、爬山，還有看小說、聽音樂， 這些興趣為我的人生增添許多色彩。
+                            <br>在學業上有興趣的領域有很多，像是資訊科學、程式設計、心理學、資訊管理、社會學、中國文學等，都是我想嘗試的領域，目前也在努力修習相關課程，期望能找到自己的興趣所在，深入鑽研。
+                            <br>我的座右銘： 活在當下，別在懷念過去或者憧憬未來中浪費掉你現在的生活。</p>
+                        <h5>My Skills</h5>
+
+                        <!-- Skill Area -->
+                        <div id="skills" class="skill-area">
+
+                            <!-- Single skill -->
+                            <div class="single-skill">
+                                <div class="skillbar" data-percent="100%">
+                                    <div class="skillbar-title"><span>團隊合作</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">100%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
+                            <!-- Single skill -->
+                            <div class="single-skill">
+                                <div class="skillbar" data-percent="85%">
+                                    <div class="skillbar-title"><span>學習能力</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">85%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
+                            <!-- Single skill -->
+                            <div class="single-skill">
+                                <div class="skillbar" data-percent="50%">
+                                    <div class="skillbar-title"><span>實務能力</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">50%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
+                        </div>
+                        <!-- //Skill Area -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== // About Area ====== -->
+
+
+
+
+    <!-- ====== Service Section ====== -->
+    <section id="service" class="section-padding pb-70 service-area bg-light" style="font-family:Microsoft YaHei">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Education</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+
+            <div class="row">
+                <!-- Single Service -->
+                <div class="col-lg-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <h2>臺北市立大同高中</h2>
+                        <p>在繁忙的課業和社團中學習時間管理、獨立自主。</p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+
+                <!-- Single Service -->
+                <div class="col-lg-6 ">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fa fa-chart-line"></i>
+                        </div>
+                        <h2>國立臺灣大學 圖書資訊學系</h2>
+                        <p>學習多領域課程，增加視野，尋找人生目標。</p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+            </div>
+
+        </div>
+    </section>
+    <!-- ====== //Service Section ====== -->
+
+    <!-- ====== Why choose Me Section ====== -->
+    <section id="" class="section-padding why-choose-us pb-70" style="font-family:Microsoft YaHei">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Why choose Me</h2>
+                        <p>我的優勢</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <!-- Single Why choose me -->
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-left">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-clock"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>執行力</h4>
+                        <p>總是身體力行，在時間內完成任務。</p>
+                    </div>
+                </div>
+                <!-- // Single Why choose me -->
+
+                <!-- Single Why choose me -->
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-right">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-calendar-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>思考力</h4>
+                        <p>隨時保持理性，獨立思考判斷。</p>
+                    </div>
+                </div>
+                <!-- // Single Why choose me -->
+
+                <!-- Single Why choose me -->
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-left">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-history"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>學習力</h4>
+                        <p>善於觀察，從旁人身上隨時學習各種優勢。</p>
+                    </div>
+                </div>
+                <!-- // Single Why choose me -->
+
+                <!-- Single Why choose me -->
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-right">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-phone-volume"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>經驗</h4>
+                        <p>擁有社團、工作經驗，處理任務能快速上手。</p>
+                    </div>
+                </div>
+                <!-- // Single Why choose me -->
+            </div>
+        </div>
+    </section>
+    <!-- ====== //Why choose Me Section ====== -->
+
+
+
+    <!-- ====== Testimonial Section ====== -->
+    <section id="testimonial" class="section-padding bg-secondary testimonial-area">
+        <div class="container bg-white">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>english certificate</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+
+
+                <!-- Single -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="single-portfolio" style="background-image: url(assets/images/08.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/08.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>全民英檢中高級初試</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single  -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="single-portfolio" style="background-image: url(assets/images/09.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/09.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>全民英檢中高級初試</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single  -->
+            </div>
+        </div>
+    </section>
+    <!-- ====== // Testimonial Section ====== -->
+
+    <!-- ======My Works Section ====== -->
+    <section class="section-padding pb-70 team-area">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>My Works</h2>
+                        <p>網頁設計作品</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <!-- Single Team -->
+                <div class="col-md mix wp graphic">
+                    <div class="single-portfolio" style="background-image: url(assets/images/07.png)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/07.png"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>課表設計</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Team -->
+
+            </div>
+        </div>
+    </section>
+    <!-- ====== // Team Section ====== -->
+
+
+    <!-- ====== Call to Action Area ====== -->
+    <section class="section-padding call-to-action-aria bg-secondary">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Extracurricular Activities</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(assets/images/04.jpg)"></div>
+                        <h4 class="blog-title"><a href="single-blog.html">管樂社</a></h4>
+                        <p>高中生活的重心，在其中受到音樂薰陶，也學習到團隊合作，更結交了許多志同道合的朋友，度過了熱血的高中生活。</p>
+
+                    </div>
+                </div>
+                <!-- Single Blog -->
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(assets/images/05.jpeg)"></div>
+                        <h4 class="blog-title"><a href="single-blog.html">排球系隊</a></h4>
+                        <p>將原本就喜歡的排球技術提升，成為在大學生活中不可或缺的休閒活動，也因此對系上更加認識。</p>
+
+                    </div>
+                </div>
+                <!-- Single Blog -->
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(assets/images/06.png)"></div>
+                        <h4 class="blog-title"><a href="single-blog.html">漁村服務社</a></h4>
+                        <p>希望能以自己的能力回饋社會，因此加入服務性社團。從中學習活動籌備的細節，也因此更加認識台灣這塊土地。</p>
+
+                    </div>
+                </div>
+                <!-- Single Blog -->
+
+            </div>
+    </section>
+    <!-- ====== // Call to Action Area ====== -->
+
+
+    <!-- ======Work Experience ====== -->
+    <section class="section-padding pb-70 pricing-area">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Work Experience</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <!-- Single Price Box -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-price-box text-center">
+                        <div class="price-head">
+                            <h2>國小全科輔導</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Price Box -->
+                <!-- Single Price Box -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-price-box text-center">
+                        <div class="price-head">
+                            <h2>國中英文家教</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Price Box -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-price-box text-center">
+                        <div class="price-head">
+                            <h2>高中職英文家教</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Price Box -->
+            </div>
+        </div>
+    </section>
+    <!-- ====== // Pricing Area ====== -->
+
+
+    <!-- ====== Contact Area ====== -->
+    <section id="contact" class="section-padding contact-section bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Contact Me</h2>
+                        <p>Email:b07106012@ntu.edu.tw</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+
+            <!-- Contact Form -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Form -->
+                    <form id="contact-form" action="mail.php" method="post" class="contact-form bg-white">
+                        <div class="row">
+                            <div class="col-lg-6 form-group">
+                                <input type="text" class="form-control" name="name" required placeholder="Name">
+                            </div>
+                            <div class="col-lg-6 form-group">
+                                <input type="email" class="form-control" name="email" required placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" required placeholder="Subject">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" id="" class="form-control" required placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-btn text-center">
+                            <button class="button" type="submit">Send Message</button>
+                            <p class="form-message"></p>
+                        </div>
+                    </form>
+                    <!-- // Form -->
+                </div>
+            </div>
+            <!-- // Contact Form -->
+        </div>
+    </section>
+    <!-- ====== // Contact Area ====== -->
+
+
+    <!-- ====== Footer Area ====== -->
+    <footer class="footer-area">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="copyright-text">
+                        <p>
+                            <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+                        </p>
+                        <p class="text-white">&copy; 2018 <a href="https://www.begindot.com/">A Template Designed by Begindot</a>
+                        </p>
+                        <!-- Social Link -->
+
+                        <!-- // Social Link -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- ====== // Footer Area ====== -->
+
+
+
+
+
+
+    <!-- ====== ALL JS ====== -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/skill.bar.js"></script>
+    <script src="assets/js/fact.counter.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 

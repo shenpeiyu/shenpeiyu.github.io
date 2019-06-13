@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-Toe</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- 自己的css -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+
+<body style="background-color:rgb(255, 179, 14)">
+
+    <div class="container">
+        <!-- 標題 -->
+        <div class="jumbotron">
+            <h1 class="display-4">Tic-Tac-Toe</h1>
+            <p class="lead">O goes first, and then X, the first who has three in a row wins.</i>
+            </p>
+            <a href="https://www.facebook.com/shen.p.yu?ref=bookmarks" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        </div>
+
+        <!-- 重新按鈕 -->
+        <a class="btn btn-primary" href="javascript:window.location.reload() " role="button">Play again</a>
+
+        <!-- 格子 -->
+        <div id="app">
+            <transition v-on:enter="enter" v-bind:css="false" appear>
+                <div class="box" v-show="true">
+                    <div v-for="(block, index) in grid" @click="select(index)">
+                        <block :figure.sync="block.figure" />
+                    </div>
+
+                </div>
+
+            </transition>
+
+            <transition v-on:enter="enterWin" v-bind:css="false">
+                <win v-show="winner" :click-handler="restart"></win>
+            </transition>
+
+        </div>
+
+    </div>
+
+    <template id="block">
+    <div class="block">
+      <transition v-on:enter="enter" v-bind:css="false">
+        <span v-show="figure > -1">{{ fig }}</span>
+      </transition>
+    </div>
+    </template>
+
+    <template id="win">
+    <div class="win">
+         <h2>Win</h2>
+    </div>
+    </template>
+
+    <!-- 自己的js -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
